@@ -1,7 +1,7 @@
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Label } from "@radix-ui/react-label";
+import { Label } from "@/components/ui/label";
 
 export default function chat() {
     return (
@@ -12,14 +12,14 @@ export default function chat() {
                         <legend>Choose a model</legend>
                         
 
-                        <RadioGroup defaultValue="option-one">
+                        <RadioGroup defaultValue="option-one" className="m-2 text-center space-x-1 text-slate-200">
                             <div className="flex items-center space-x-2">
                                 <RadioGroupItem value="option-one" id="option-one"></RadioGroupItem>
-                                <Label htmlFor="option-one">Option One</Label>
+                                <label htmlFor="option-one">flamy</label>
                             </div>
                             <div className="flex items-center space-x-2">
                                 <RadioGroupItem value="option-one" id="option-one"></RadioGroupItem>
-                                <Label htmlFor="option-one">Option One</Label>
+                                <label htmlFor="option-one">Hotsy</label>
                             </div>
                         </RadioGroup>
                     </fieldset>
