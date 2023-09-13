@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label";
 
 export default function login() {
     return (
-        <main className="flex items-center justify-center h-screen">
+        <main className="flex items-center justify-center">
             <div className="bg-black shadow-lg rounded-xl p-6">
                 <div className="text-xl font-medium text-black">
                     <div className="flex items-center justify-center">

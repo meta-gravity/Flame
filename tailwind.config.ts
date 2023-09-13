@@ -16,6 +16,9 @@ module.exports = {
       },
     },
     extend: {
+   //   backgroundImage: {
+   //     'custom-image': "url('/app/images/piano.png')",
+  //  },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
