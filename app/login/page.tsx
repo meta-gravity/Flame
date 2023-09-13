@@ -1,34 +1,30 @@
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
+import {
+    Form,
+    FormControl,
+    FormDescription,
+    FormField,
+    FormItem,
+    FormLabel,
+    FormMessage,
+  } from "@/components/ui/form"
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-
 
 
 export default function login() {
     return (
         <main className="flex items-center justify-center">
-            <div className="bg-black shadow-lg rounded-xl p-6">
-                <div className="text-xl font-medium text-black">
-                    <div className="flex items-center justify-center">
-                        <Input type="email" placeholder="Email" className="peer"/>
-                        <p className="mt-1 invisible peer-invalid:visible text-pink-700 text-sm">
-                            Nah, provide a valid email address 🚫
-                        </p>
-                        <Button type="submit" variant="default">Subscribe</Button>
-                    </div>
-                </div>
-                <div className="m-3 flex items-center justify-center space-x-2">
-                    <Checkbox id="terms" />
-                    <Label htmlFor="terms">Accept terms and conditions</Label>
-                </div>
-                <div className="flex items-center justify-center p-3">
-                    <Button variant="outline">
-                        <a href="/">back</a>
-                    </Button>
+            <div class="p-6 max-w-sm mx-auto bg-grey-200 rounded-xl shadow-lg flex items-center space-x-2 ">
+                <div className="w-full max-w-sm items-center space-x-2">
+                    <span className="flex text-sm font-medium text-slate-400">
+                    Email
+                    </span>
+                    <Input type="email" placeholder="you@example.com" required className=" focus:ring-1" />
+                    <Button type="submit" className="items-center p-2 m-8 text-center">Sign in</Button>
                 </div>
             </div>
-            
         </main>
     )
 }
