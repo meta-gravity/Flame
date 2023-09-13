@@ -1,6 +1,6 @@
 import { link } from 'fs'
 import Image from 'next/image'
-import { ChevronRight, Mail } from "lucide-react"
+import { ChevronRight, Mail, Star } from "lucide-react"
 import { Button } from '@/components/ui/button';
 import { EnvelopeOpenIcon } from "@radix-ui/react-icons"
 import { Github } from 'lucide-react'
@@ -27,7 +27,7 @@ export default function Home() {
             </Button>
             <Button variant="outline" className='m-4 rounded-lg p-4' >
               <Link href="https://github.com/meta-gravity/Flame">
-                <Github  className="" /> Star on Github
+                <Github fill='' className=" fill-none" />
               </Link>
             </Button>
           </div>
