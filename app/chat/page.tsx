@@ -12,7 +12,7 @@ export default function chat() {
                         <legend>Choose a model</legend>
                         
 
-                        <RadioGroup defaultValue="option-one" className="m-2 text-center space-x-1 text-slate-200">
+                        <RadioGroup defaultValue="option-one" className="m-2 text-center space-x-1 text-slate-600">
                             <div className="flex items-center space-x-2">
                                 <RadioGroupItem value="option-one" id="option-one"></RadioGroupItem>
                                 <label htmlFor="option-one">flamy</label>
