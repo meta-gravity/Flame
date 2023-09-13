@@ -18,19 +18,25 @@ export default function Home() {
               Superpowers
             </div>
           </div>
-          <p className='text-slate-500 text-sm font-semibold'>
-            Flame⚡is an open-source tool that helps designer and developer to display their works
+          <p className='text-slate-500 text-sm font-semibold fw-50 text-xl'>
+            Flame⚡is an open-source tool that helps designer 
+            <br />
+            and developer to display their works
           </p>
           <div className='justify-center items-center flex'>
             <Button variant="default" className='m-4 rounded-lg p-4'>
-              <EnvelopeOpenIcon className="mr-2 h-4 w-4" /> Login with Email
+              <EnvelopeOpenIcon className="mr-2 h-4 w-4" />
+              <a href="/login">
+               Login with Email
+              </a>
             </Button>
-            <Button variant="outline" className='m-4 rounded-lg p-4' >
+            <Button variant="outline" className='m-4 rounded-lg p-4 hover:outline' >
               <Link href="https://github.com/meta-gravity/Flame">
                 <Github fill='' className=" fill-none" />
               </Link>
             </Button>
           </div>
+           
         </div>
     </main>
   )
