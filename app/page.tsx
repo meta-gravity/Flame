@@ -26,8 +26,9 @@ export default function Home() {
               <EnvelopeOpenIcon className="mr-2 h-4 w-4" /> Login with Email
             </Button>
             <Button variant="outline" className='m-4 rounded-lg p-4' >
-              <Link href="https://github.com/meta-gravity/Flame" />
-              <Github  className="">Star on Github</Github>
+              <Link href="https://github.com/meta-gravity/Flame">
+                <Github  className="" /> Star on Github
+              </Link>
             </Button>
           </div>
         </div>
