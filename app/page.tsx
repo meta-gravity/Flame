@@ -7,6 +7,7 @@ import { Github } from 'lucide-react'
 import Link from 'next/link';
 import { getServerSession } from 'next-auth';
 import { authOptions } from './api/auth/[...nextauth]/route';
+import { User } from './user';
 
 // import './globals.css'
 
@@ -40,7 +41,10 @@ export default async function Home() {
               </Link>
             </Button>
           </div>
+            <h2>Server</h2>
             <pre>{JSON.stringify(session)}</pre>
+            <h2>client</h2>
+            <User />
         </div>
     </main>
   )
