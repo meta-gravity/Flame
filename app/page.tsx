@@ -6,14 +6,15 @@ import { EnvelopeOpenIcon } from "@radix-ui/react-icons"
 import { Github } from 'lucide-react'
 import Link from 'next/link';
 import { getServerSession } from 'next-auth';
-import { authOptions } from './api/auth/[...nextauth]/route';
+// import { authOptions } from './api/route';
 import { User } from './user';
-import { LoginButton, LogoutButton } from './auth';
+// import { LoginButton, LogoutButton } from './auth';
+
 
 // import './globals.css'
 
 export default async function Home() {
-  const session = await getServerSession(authOptions)
+  // const session = await getServerSession(authOptions)
    
   return (
     <main>
@@ -30,25 +31,13 @@ export default async function Home() {
             and developer to display their works
           </p>
           <div className='justify-center items-center flex'>
-            <Button variant="default" className='m-4 rounded-lg p-4'>
-              <EnvelopeOpenIcon className="mr-2 h-4 w-4" />
-              <a href="/login">
-               Login with Email
-              </a>
-            </Button>
+
             <Button variant="outline" className='m-4 rounded-lg p-4 hover:outline' >
               <Link href="https://github.com/meta-gravity/Flame">
                 <Github fill='' className=" fill-none" />
               </Link>
             </Button>
           </div>
-            <h2>Server</h2>
-            <pre>{JSON.stringify(session)}</pre>
-            <h2>client</h2>
-            <User />
-            
-            <LoginButton />
-            <LogoutButton />
         </div>
     </main>
   )
