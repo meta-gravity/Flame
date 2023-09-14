@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { getServerSession } from 'next-auth';
 import { authOptions } from './api/auth/[...nextauth]/route';
 import { User } from './user';
+import { LoginButton, LogoutButton } from './auth';
 
 // import './globals.css'
 
@@ -45,6 +46,9 @@ export default async function Home() {
             <pre>{JSON.stringify(session)}</pre>
             <h2>client</h2>
             <User />
+            
+            <LoginButton />
+            <LogoutButton />
         </div>
     </main>
   )
