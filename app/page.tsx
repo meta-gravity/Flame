@@ -5,10 +5,14 @@ import { Button } from '@/components/ui/button';
 import { EnvelopeOpenIcon } from "@radix-ui/react-icons"
 import { Github } from 'lucide-react'
 import Link from 'next/link';
+import { getServerSession } from 'next-auth';
+import { authOptions } from './api/auth/[...nextauth]/route';
 
 // import './globals.css'
 
-export default function Home() {
+export default async function Home() {
+  const session = await getServerSession(authOptions)
+   
   return (
     <main>
         <div className='text-center'>
@@ -36,7 +40,7 @@ export default function Home() {
               </Link>
             </Button>
           </div>
-           
+            <pre>{JSON.stringify(session)}</pre>
         </div>
     </main>
   )
