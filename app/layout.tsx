@@ -4,7 +4,6 @@ import { Inter } from 'next/font/google'
 import React from 'react'
 import Header from './header'
 import { ThemeProvider } from "@/components/providerstheme"
-import { Providers } from './providers'
 
 
 
@@ -19,12 +18,10 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
   return (
       <html lang="en">
         <body>
-          <Providers>
             <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
               <Header />
               {children}
             </ThemeProvider>
-          </Providers>
         </body>
      </html>
   )

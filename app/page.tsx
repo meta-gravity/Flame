@@ -5,17 +5,12 @@ import { Button } from '@/components/ui/button';
 import { EnvelopeOpenIcon } from "@radix-ui/react-icons"
 import { Github } from 'lucide-react'
 import Link from 'next/link';
-import { getServerSession } from 'next-auth';
-// import { authOptions } from './api/route';
-import { User } from './user';
-// import { LoginButton, LogoutButton } from './auth';
+
 
 
 // import './globals.css'
 
 export default async function Home() {
-  // const session = await getServerSession(authOptions)
-   
   return (
     <main>
         <div className='text-center'>
@@ -31,7 +26,6 @@ export default async function Home() {
             and developer to display their works
           </p>
           <div className='justify-center items-center flex'>
-
             <Button variant="outline" className='m-4 rounded-lg p-4 hover:outline' >
               <Link href="https://github.com/meta-gravity/Flame">
                 <Github fill='' className=" fill-none" />
